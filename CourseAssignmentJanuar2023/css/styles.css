@@ -1,10 +1,22 @@
 @font-face{
     font-family:'Roboto Flex', sans-serif;
+    font-family:"Roboto Slab", sans-serif;
+    font-family:"Roboto", sans-serif;
 }
 
+header{
+    background-color :#B0C8DB;
+}
 body{
     background-color:#A4B6CA;
     color:#1B203D;
     font-family:roboto Flex, times_new_roman;
 }
 
+h1{
+    font-family:"Roboto", 'Times New Roman', Times, serif
+}
+
+footer{
+    background-color: #1B203D;
+}
