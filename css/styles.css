@@ -183,5 +183,16 @@ footer{
     object-fit: cover;
 }
 
+/*Success Page*/
+
+.success{
+    text-align:center;
+    background-color: #7AA0B8;
+    color: #1B203D;
+    
+}
+
+
+
 
 
