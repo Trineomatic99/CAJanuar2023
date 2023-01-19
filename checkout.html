@@ -10,8 +10,8 @@
 </head>
 <body>
     <header> 
-        <img src="../CourseAssignmentJanuar2023/Img/GameHub_Logo.png" alt="GameHub Logo"class="Logo"/>
-        <a href="profile.html"> Log in</a>
+        <img src="Img/GameHub_Logo.png" alt="GameHub Logo"class="logo"/>
+        <a href="profile.html" class="login"> Log in</a>
         <nav>
             <li>Search</li>
             <ul>
@@ -24,44 +24,54 @@
         </nav>
     </header>
     <main>
-        <section>
-            <a href="cart.html">Go back</a>
-            <h1>Checkout</h1>
-         </section>
-         <section>
-            <h3>Personal Info</h3>
-            <p>Full Name</p>
-            <input type="text" name="username">
-            <p>Password</p>
-            <input type="password" name="password">
-            <p>Email</p>
-            <input type="text" name="email address">
-            <p>Phone Number</p>
-            <input type="text" name="number">
-         </section>
-         <section>
-            <h3>Address</h3>
-            <p>Street Name</p>
-            <input type="text" name="streetname">
-            <p>Security Code</p>
-            <input type="password" name="security code">
-            <p>Exp.date</p>
-            <input type="text" name="exp.date">
-            <p>Gift Card</p>
-            <input type="text" name="giftcard">
-        </section>
-        <a href="success.html">Confirm</a>
+        <h1>Checkout</h1>
+       <form>
+        <fieldset>
+            <legend>
+                <h2>Personal Info</h2>
+                <label for="full name">Full name</label>
+                <input type="text" id="full name">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="phonenumber">Phone number</label>
+                <input type="tel" id="phonenumber">
+            </legend>
+            <legend>
+                <h2>Address</h2>
+                <label for="streetname">Streetname</label>
+                <input type="text" id="streetname">
+                <label for="housenr">Nr.</label>
+                <input type="text" id="housenr">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip">
+            </legend>
+            <legend>
+                <h2>Card Information</h2>
+                <label for="cardnr">Card number</label>
+                <input type="text" id="cardnr">
+                <label for="sec-code">Security Code</label>
+                <input type="password" id="sec-code">
+                <label for="exp-date">Exp.date</label>
+                <input type="date" id="exp-date">
+                <label for="giftcard">Gift Card</label>
+                <input type="text" id="giftcard">
+            </legend>
+            <button><a href="success.html" class="cta">Confirm</a></button>
+        </fieldset>
+    </form>
         <section>
             <h1>Suggested Games</h1>
-            <a href="game_forge.html"><img src="../CourseAssignmentJanuar2023/Img/GameHub_covers3.jpg" alt="GameBlack"></a>
-            <a href="game_forge.html"><img src="../CourseAssignmentJanuar2023/Img/GameHub_covers4.jpg"alt="GameFurious"></a>
-            <a href="game_forge.html"><img src="../CourseAssignmentJanuar2023/Img/GameHub_covers5.jpg"alt="GameAssassin"></a>
+            <a href="game_forge.html"><img src="Img/GameHub_covers3.jpg" alt="GameBlack" class="product"></a>
+            <a href="game_forge.html"><img src="Img/GameHub_covers4.jpg"alt="GameFurious" class="product"></a>
+            <a href="game_forge.html"><img src="Img/GameHub_covers5.jpg"alt="GameAssassin" class="product"></a>
         </section>
     </main>
     <footer>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <img src="../CourseAssignmentJanuar2023/Img/GameHub_Logo.png" alt="GameHubLogo">
+        <img src="Img/GameHub_Logo.png" alt="GameHubLogo" class="footer-logo">
         <h4>2022 &copy;Copyright Gamehub</h4>
     </footer>
 </body>

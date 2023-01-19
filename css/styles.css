@@ -5,18 +5,93 @@
 }
 
 header{
+    background-image: url(../Img/HeaderPic.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color :#B0C8DB;
+    background-position-x: right;
+    margin: 0px;
+    padding: 0px;
 }
+
+.login{
+    text-decoration: underline;
+}
+
+.logo{
+    width: 165px;
+    height: 104px;
+}
+
+nav li{
+    display: inline;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     background-color:#A4B6CA;
     color:#1B203D;
     font-family:roboto Flex, times_new_roman;
 }
 
+.product{
+    width: 270px;
+    height: 271px;
+    object-fit: cover;
+    overflow: auto;
+}
+
+.product-cart{
+    width: 142px;
+    height: 162px;
+}
+
+button{
+background-color: #1B203D;
+}
 h1{
     font-family:"Roboto", 'Times New Roman', Times, serif
+}
+
+.footer-logo{
+    width: 224px;
+    height: 141px;
 }
 
 footer{
     background-color: #1B203D;
 }
+
+/*Productpage*/
+.productpg-img{
+    width: 388px;
+    height: 451px;
+    object-fit: cover;  
+}
+
+/*Cart*/
+
+/*About Page*/
+
+.founder{
+    width: 215px;
+    height: 215px;
+    object-fit: cover;
+}
+
+.about{
+    background-color: #7AA0B8;
+}
+
+.about-logo{
+    width: 332px;
+    height: 331px;
+    object-fit: cover;
+}
+
+
+
