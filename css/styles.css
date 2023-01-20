@@ -4,65 +4,21 @@
     font-family:"Roboto", sans-serif;
 }
 
+/*Css Variables*/
+
+/*Universal- all pages*/
 
 header{
     display: flex;
+    flex-wrap: wrap;
     background-image: url(../Img/HeaderPic.png);
     background-repeat: no-repeat;
-    background-size: auto;
-    width: auto;
-    max-width: 2000px;
-    min-width: 300px;
-    height: 320px;
-}
-
-body{
-    background-color:#A4B6CA;
-    color:var--cta-buttons;
-    font-family:roboto Flex, times_new_roman;
-}
+    background-size: 1550px;
+    height: 300px;
+    margin-bottom: 100px;
 
 
 
-.margin-pic-left{
-    background-image: url(../Img/Guter\ LEft.jpg);
-    background-repeat: no-repeat;
-    max-width: 240px;
-}
-
-.margin-pic-right{
-    background-image: url(../Img/GutterRight.jpg);
-    background-repeat: no-repeat;
-}
-
-
-.active{
-    text-decoration: underline;
-}
-
-.main-nav{
-    display: flex;
-    max-width: 100%;
-    align-items:flex-end;
-}
-
-
-a:visited{
-    text-decoration: none;
-    color: #1B203D;
-}
-
-.login{
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    background-color: #fff;
-    width: 160px;
-    height: 40px;
-    border-radius:10px;
-    border: none;
-    font-size: 27px;
 }
 
 .logo{
@@ -70,12 +26,99 @@ a:visited{
     height: 104px;
 }
 
-nav li{
-    display: inline;
+.nav{
+    align-self: flex-end;
     text-decoration: none;
     font-size: 30px;
-    background-color: #7AA0B8;
+    display: inline;
+    padding: 0px 20px;
+    position: relative;
+    left: 332px;
+    top: 10px;
 }
+
+.search{
+    color:#1B203D;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline; 
+    position: relative;
+    top: 10px;
+}
+
+.cart{
+    text-decoration: none;
+    font-size: 30px;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 660px;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1550px;
+    height: 60px;
+}
+
+.main-list{
+    background-color: #7AA0B8;
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+body{
+    background-color:#A4B6CA;
+    color:var--cta-buttons;
+    font-family:roboto Flex, times_new_roman;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.margin-pic-left{
+    background-image: url(../Img/Guter\ LEft.jpg);
+    background-repeat: no-repeat;
+}
+
+.margin-pic-right{
+    background-image: url(../Img/GutterRight.jpg);
+    background-repeat: no-repeat;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #1B203D;
+}
+
+.login{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    width: 160px;
+    height: 40px;
+    border-radius:10px;
+    border: none;
+    font-size: 27px;
+    position: relative;
+    left: 1100px;
+    margin-top: 10px;
+}
+
 
 a{
     text-decoration: none;
@@ -97,19 +140,14 @@ a{
     overflow: auto;
 }
 
-.product-cart{
-    width: 142px;
-    height: 162px;
-}
-
-
 .cta{
     background-color:var--(cta-buttons);
 }
 
 
 
-h1{
+h1,
+h2{
     font-family:"Roboto", 'Times New Roman', Times, serif
 }
 
@@ -126,14 +164,16 @@ footer{
 
 .slider-homepage{
     display: flex;
-    align-items:center;
-    flex-direction: column;
     color: #C8E2F3;
     background-color: #1B203D;
 }
 
+.slider-text{
+text-align: center;
+}
+
 .slider-pic{
-    width: 330px;
+    width: 300px;
 }
 
 .cta-slider{
@@ -179,6 +219,10 @@ footer{
 }
 
 /*Cart*/
+.product-cart{
+    width: 142px;
+    height: 162px;
+}
 
 /*About Page*/
 
@@ -205,6 +249,29 @@ footer{
     background-color: #7AA0B8;
     color: #1B203D;
     
+}
+
+/*Contact Page*/
+
+.contact-h1{
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    color: #1B203D;
+}
+
+.contact-heading{
+    font-size: 25px;
+    font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
+    color: #1B203D; 
+}
+
+.contact-content{
+    font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
+    color: #1B203D;
+}
+
+.contact-h1,
+.contact-heading,
+.contact-content{
 }
 
 
