@@ -11,10 +11,9 @@ header{
     background-repeat: no-repeat;
     background-size: auto;
     width: auto;
-    max-width: 1550px;
+    max-width: 2000px;
     min-width: 300px;
     height: 320px;
-
 }
 
 body{
@@ -22,6 +21,20 @@ body{
     color:var--cta-buttons;
     font-family:roboto Flex, times_new_roman;
 }
+
+
+
+.margin-pic-left{
+    background-image: url(../Img/Guter\ LEft.jpg);
+    background-repeat: no-repeat;
+    max-width: 240px;
+}
+
+.margin-pic-right{
+    background-image: url(../Img/GutterRight.jpg);
+    background-repeat: no-repeat;
+}
+
 
 .active{
     text-decoration: underline;
@@ -61,6 +74,7 @@ nav li{
     display: inline;
     text-decoration: none;
     font-size: 30px;
+    background-color: #7AA0B8;
 }
 
 a{
@@ -151,7 +165,8 @@ footer{
 
 .games-row{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: aut;
     background-color:#1B203D;
 
 }
