@@ -16,7 +16,6 @@
 /*Universal- all pages*/
 
 header{
-    display: contents;
     grid-area: header;
     position: fixed;
     display: grid;
@@ -34,20 +33,22 @@ header{
 .logo{
     width: 165px;
     height: 104px;
-    display: flex;
     grid-area: logo;
     grid-gap: 200px;
 }
 
 .main-list{
-    display:contents;
+    display: inline-block;
     color: var(--font-color);
     font-size: 30px;
     list-style: none;
     min-width: 100%;
-    grid-area: navbar navbar;
-    justify-content: center;
-    align-content: center;
+    grid-area: "navbar navbar";
+}
+
+#main-list{
+    display: inline;
+
 }
 
 nav{
@@ -96,25 +97,10 @@ body{
     "footer footer footer";
 }
 
-.margin-pic-left{
-    grid-area: gutter-left;
-    max-width: fit-content;
-    min-width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .all-content{
     grid-area: content;
     margin-top: 200px;
-}
-
-.margin-pic-right{
-    grid-area: gutter-right;
-    max-width: fit-content;
-    min-width: none;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .active{
