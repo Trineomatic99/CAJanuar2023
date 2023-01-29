@@ -5,18 +5,26 @@
 }
 
 /*Css Variables*/
+:root{
+    --font-color: #1B203D;
+    --accent-color: #A4B6CA;
+    --darker-accent-color: #7AA0B8;
+    --lightest-color: #FFF;
+}
+
 
 /*Universal- all pages*/
 
 header{
+    display: contents;
     grid-area: header;
     position: fixed;
     display: grid;
-    flex-wrap: wrap;
     background-image: url(../Img/HeaderPic.png);
     background-repeat: no-repeat;
     background-size: 100%;
     min-width: 1000px;
+    min-height: 500px;
     width: 100%;
     grid-template-areas: 
     "logo login"
@@ -27,41 +35,43 @@ header{
     width: 165px;
     height: 104px;
     display: flex;
-    grid-area: "logo";
+    grid-area: logo;
+    grid-gap: 200px;
 }
-
-.search{
-    color:#1B203D;
-    text-decoration: none;
-    font-size: 30px;
-    display: inline;
-}
-
-.cart{
-    text-decoration: none;
-    font-size: 30px;
-    display: inline;
-}
-
-
 
 .main-list{
-    grid-area:"navbar navbar";
-    display: inline;
-    background-color: #7AA0B8;
-    width: 100%;
-    height: 100%;
+    display:contents;
+    color: var(--font-color);
+    font-size: 30px;
+    list-style: none;
+    min-width: 100%;
+    grid-area: navbar navbar;
+    justify-content: center;
+    align-content: center;
+}
 
+nav{
+    background-color: var(--darker-accent-color);
+    display: inline;
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
 }
 
 .login{
-    grid-area:"login";
+    grid-area: login;
     justify-self: end;
     display: flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--lightest-color);
     min-width: 160px;
     min-height: 40px;
     max-width: 160px;
@@ -72,9 +82,10 @@ header{
 }
 
 
+
 body{
     display: grid;
-    background-color:#A4B6CA;
+    background-color:var(--accent-color);
     font-family:roboto Flex, times_new_roman;
     margin: 0px;
     padding: 0px;
@@ -82,7 +93,7 @@ body{
     grid-template-areas:
     "header header header"
     "gutter-left content gutter-right" 
-    "footer footer footer" ;
+    "footer footer footer";
 }
 
 .margin-pic-left{
@@ -95,6 +106,7 @@ body{
 
 .all-content{
     grid-area: content;
+    margin-top: 200px;
 }
 
 .margin-pic-right{
@@ -111,7 +123,7 @@ body{
 
 a:visited{
     text-decoration: none;
-    color: #1B203D;
+    color: var(--font-color);
 }
 
 a{
@@ -147,10 +159,19 @@ h2{
     height: 141px;
 }
 
+.text-footer{
+    color: var(--lightest-color);
+    }
+
+
 footer{
-    background-color: #1B203D;
+    color: var(--font-color);
+    background-color: var(--font-color);
     background-size: 100%;
     grid-area: footer;
+    align-self:flex-end;
+    display: flex;
+    
 }
 
 /*Homepage*/
@@ -158,8 +179,8 @@ footer{
 .slider-homepage{
     display: flex;
     width: 70%;
-    color: #C8E2F3;
-    background-color: #1B203D;
+    color: var(--lightest-color);
+    background-color: var(--font-color);
     margin: 60px 20px;
 }
 
@@ -181,8 +202,8 @@ footer{
     width :188px;
     border-radius: 10px;
     border: none;
-    color: #1B203D;
-    background-color: #7AA0B8;
+    color: var(--font-color);
+    background-color: var(--darker-accent-color);
 }
 
 /*GamesPage*/
@@ -200,7 +221,7 @@ footer{
 
 .games-headings{
     font-family:"Roboto Flex", Verdana, Geneva, Tahoma, sans-serif;
-    color: #FFF;
+    color: var(--lightest-color);
 }
 
 .games-row{
@@ -211,7 +232,7 @@ footer{
     align-items: center;
     justify-items: center;
     padding: 100px 20px;
-    background-color:#1B203D;
+    background-color:var(--font-color);
 
 }
 
@@ -237,7 +258,7 @@ footer{
 }
 
 .about{
-    background-color: #7AA0B8;
+    background-color: var(--darker-accent-color);
 }
 
 .about-logo{
@@ -250,8 +271,8 @@ footer{
 
 .success{
     text-align:center;
-    background-color: #7AA0B8;
-    color: #1B203D;
+    background-color: var(--darker-accent-color);
+    color: var(--font-color);
     
 }
 
@@ -259,16 +280,16 @@ footer{
 
 .contact-h1{
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    color: #1B203D;
+    color: var(--font-color);
 }
 
 .contact-heading{
     font-size: 25px;
     font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
-    color: #1B203D; 
+    color: var(--font-color);
 }
 
 .contact-content{
     font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
-    color: #1B203D;
+    color: var(--font-color);
 }
