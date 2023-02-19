@@ -93,6 +93,7 @@ li {
 
   .active {
     background-color: var(--accent-color);
+    color: var(--font-color);
   }
 
   .searchbar{
