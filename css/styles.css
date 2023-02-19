@@ -88,11 +88,11 @@ li {
 
   li a:hover:not(.active) {
     background-color: var(--font-color);
-    color: var()
+    color: var(--lightest-color)
   }
 
   .active {
-    background-color: #616d75;
+    background-color: var(--accent-color);
   }
 
   .searchbar{
@@ -102,7 +102,7 @@ li {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
-    border: 1px solid #fff4f4;
+    border: 1px solid var(--lightest-color);
 }
 
 
@@ -140,7 +140,6 @@ body{
 
 
 .all-content{
-    grid-area: content;
     margin-top: 200px;
 }
 
@@ -161,8 +160,6 @@ a{
     text-decoration: underline;
 }
 
-
-
 .product{
     width: 270px;
     height: 271px;
@@ -173,8 +170,6 @@ a{
 .cta{
     background-color:var--(cta-buttons);
 }
-
-
 
 h1,
 h2{
@@ -192,18 +187,15 @@ h2{
     padding: 0;
     }
 
-
 footer{
-        color:var(--lightest-color);
-        background-color: var(--font-color);
-        width: 100%;
-        text-align: center;
-        left: 0;
-        bottom: 0;
-        padding-bottom: 20px;
-    
-
-    }
+    color:var(--lightest-color);
+    background-color: var(--font-color);
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+}
 
 /*Homepage*/
 
@@ -342,6 +334,10 @@ footer{
 
 /*About Page*/
 
+.about-main{
+    padding-top: 100px;
+}
+
 .founder{
     width: 215px;
     height: 215px;
@@ -369,6 +365,10 @@ footer{
 }
 
 /*Contact Page*/
+
+.contact-main{
+    padding-top: 150px;
+}
 
 .contact-h1{
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
