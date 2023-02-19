@@ -139,9 +139,6 @@ body{
 }
 
 
-.all-content{
-    margin-top: 200px;
-}
 
 .active{
     text-decoration: underline;
@@ -204,7 +201,7 @@ footer{
     width: 70%;
     color: var(--lightest-color);
     background-color: var(--font-color);
-    margin: 60px 20px;
+    padding-top: 200px;
 }
 
 .slider-text{
