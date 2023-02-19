@@ -16,25 +16,30 @@
 /*Universal- all pages*/
 
 header{
-    grid-area: header;
+    /* grid-area: header; */
     position: fixed;
-    display: grid;
+    /* display: grid; */
     background-image: url(../Img/HeaderPic.png);
     background-repeat: no-repeat;
     background-size: 100%;
     min-width: 1000px;
-    min-height: 500px;
     width: 100%;
-    grid-template-areas: 
+    min-height: 175px;
+    /* grid-template-areas: 
     "logo login"
-    "navbar navbar";
+    "navbar navbar"; */
 }
 
 .logo{
     width: 165px;
     height: 104px;
-    grid-area: logo;
-    grid-gap: 200px;
+    /* grid-area: logo; */
+    /* grid-gap: 200px; */
+}
+
+.logo a{
+    width: 165px;
+    height: 104px;
 }
 
 .main-list{
@@ -54,8 +59,7 @@ header{
 nav{
     display: inline;
     height: 100%;
-    width: 100%; /
-
+    width: 100%; 
 }
 
 ul{
@@ -67,6 +71,7 @@ ul{
     position: fixed;
     top: 0;
     width: 100%;
+
 }
 
 li {
@@ -75,14 +80,15 @@ li {
 
   li a {
     display: block;
-    color: white;
+    color: var(--lightest-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
   li a:hover:not(.active) {
-    background-color: #0d003c;
+    background-color: var(--font-color);
+    color: var()
   }
 
   .active {
@@ -120,16 +126,16 @@ li {
 
 
 body{
-    display: grid;
+    /* display: grid; */
     background-color:var(--accent-color);
     font-family:roboto Flex, times_new_roman;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    grid-template-areas:
-    "header header header"
+    /* grid-template-areas: */
+    /* "header header header"
     "gutter-left content gutter-right" 
-    "footer footer footer";
+    "footer footer footer"; */
 }
 
 
@@ -178,23 +184,25 @@ h2{
 .footer-logo{
     width: 80px;
     height: 50px;
-    padding-top: 10px;
 }
 
 .text-footer{
     color: var(--lightest-color);
     text-align: center;
+    padding: 0;
     }
 
 
-    footer{
+footer{
         color:var(--lightest-color);
         background-color: var(--font-color);
         width: 100%;
         text-align: center;
-        position: fixed;
         left: 0;
         bottom: 0;
+        padding-bottom: 20px;
+    
+
     }
 
 /*Homepage*/
@@ -271,6 +279,66 @@ h2{
     width: 142px;
     height: 162px;
 }
+
+.games-heading{
+    padding-top: 200px;
+    color: var(--font-color);
+    text-align: center;
+}
+
+.games-headings{
+    color: var(--font-color);
+    text-align: center;
+}
+
+.shopping-cart{
+    width: 100%;
+}
+
+.column{
+    float:left;
+    width:33%;
+    border-right: 1px solid black;
+}
+
+.all-games-img{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    min-width: 80px;
+    min-height: 130px; 
+    max-width: 150px;
+    max-height: 250px;
+    display: block;
+}
+
+.all-prices{
+    padding-bottom: 180px;
+    padding-left: 10px;
+}
+
+.remove-buttons{
+    display: block;
+    margin-bottom: 200px;
+    margin-left: 10px;
+}
+
+.cart-headings{
+    padding-left: 10px
+}
+
+.payment-button{
+    background-color: var(--font-color);
+    border: none;
+    color: var(--lightest-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 
 /*About Page*/
 
